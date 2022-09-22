@@ -1,0 +1,46 @@
+.front .block-panels-mini h2, .front #content .block-views h2, .front .block-block h2, .front .hightlight h2 {
+    border-bottom: 1px solid #e6e6e6;
+    color: #0056e0;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px 7px 0;
+    text-transform: uppercase;
+}
+h1, h2, h3 {
+    line-height: 25px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-family: inherit;
+    font-weight: bold;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: crimson;
+}
+
+h2 {
+    color: crimson;
+}
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.item-list ul li {
+    margin: 0 0 0.25em 1.5em;
+    padding: 0;
+}
+
