@@ -7,12 +7,38 @@
     font-size: 18px;
     margin-top: 32px;
  }
+
+ img{
+   width: 250px; 
+   height:200px;
+ }
+ .vertical-menu {
+   width: 200px;
+ }
  
+ .vertical-menu a {
+   background-color: black;
+   color: white  ;
+   display: block;
+   padding: 12px;
+   text-decoration: none;
+ }
+ 
+ .vertical-menu a:hover {
+   background-color:#00bfbf;
+ }
+ 
+
  .title-header-color{
     color: #00bfbf;
     text-align: center;
     font-size: 32px;
  }
+
+ .menu{
+   position: fixed;
+   right: 0;
+}
  
  header{
     margin: 0 25%;
@@ -67,13 +93,13 @@
     color: #00bfbf;
     height: 50px;   
     text-align: justify;
-    margin: -8px -65px;
+    margin: 5px;
     font-size: 23px;
  }
  
  .content1{
     text-align: justify;
-    margin: -8px -65px;
+    margin: 5px;
  }
  
  /* article */

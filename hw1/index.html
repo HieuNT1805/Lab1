@@ -9,9 +9,17 @@
     <title>Intro</title>
 </head>
 <body>
-
+    <div class="menu">
+        <div class="vertical-menu">
+            <a onclick="goToProfile()">Profile</a>
+            <a onclick="goToExperience()">Experiences</a>
+            <a onclick="goToAbilities()">Abilities</a>
+            <a onclick="goToProject()">Project</a>
+            <a onclick="goToProject()">Contact</a>
+        </div>
+    </div>
     <header>
-        <div class="text">
+        <div class="text" id="Profile">
             <h1 class="title title-header-color">Profile</h1>        
             <p>I'm a student</p>          
         </div>
@@ -24,7 +32,7 @@
                 <p>I have passion in IT and I want to become Full-Stack Developer.</p>
             </div>
         </div>
-        <img src="1.jpg" width="250" height="200">
+        <img src="1.jpg" >
        
         <div id="Details">
             <h3>Details</h3>
@@ -43,7 +51,7 @@
     </header>
 
     <article>
-        <h1 class="title title-header-color">Experience</h1> <hr> <br>
+        <h1 class="title title-header-color" id="Experience">Experience</h1> <hr> <br>
         <div class="educations">
             <h3 class="educations--title">Education</h3>
             <div class="educations_i"><br>
@@ -73,7 +81,7 @@
 
 
     <div id="next"> 
-      <h1 class="title-header-color">Abilities</h1> <br>
+      <h1 class="title-header-color" id="Abilities">Abilities</h1> <br>
       <hr> <br>
 
         <div id="skill">
@@ -240,6 +248,6 @@
                 </div>
             </div>
     </div>
-    
+    <script src="./index.js"></script>
 </body>
 </html>
