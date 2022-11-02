@@ -6,10 +6,6 @@ function Drum(props) {
 		setPlaying(true);
 
 		new Audio(props.sound).play();
-
-		setTimeout(() => {
-			setPlaying(false);
-		}, 150);
 	};
 
 	useEffect(() => {
@@ -21,10 +17,13 @@ function Drum(props) {
 	});
 
 	return (
-		<div className={`drum ${playing ? "playing" : ""}`} onClick={play}>
-			<div className="key" >{props.letter}</div>
-            
-		</div>
+		
+			<div className={`drum ${playing ? "playing" : ""}`} c onClick={play}>
+				
+				<div className={props.setname}>{props.letter}</div>
+				
+			</div>
+		
 	);
 }
 

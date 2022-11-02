@@ -18,17 +18,17 @@ function App() {
 			key: "W",
 		},
 		{
-			name: "tom-2",
+			name: "tom2",
 			sound: tom2,
 			key: "A",
 		},
 		{
-			name: "hihat",
+			name: "tom3",
 			sound: tom3,
 			key: "S",
 		},
 		{
-			name: "kick",
+			name: "tom4",
 			sound: tom4,
 			key: "D",
 		},
@@ -54,7 +54,7 @@ function App() {
 			<h1>The Drum Kit</h1>
 			<div className="drums">
 				{sounds.map((sound, i) => (
-					<Drum key={i} letter={sound.key} sound={sound.sound} />
+					<Drum setname={sound.name} key={i} letter={sound.key} sound={sound.sound} />
 				))}
 			</div>
 		</div>
