@@ -2,8 +2,12 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mui/base": "^5.0.0-alpha.104",
     "@mui/material": "^5.10.12",
+    "@mui/styled-engine-sc": "^5.10.6",
+    "@mui/system": "^5.10.12",
     "react-spinners": "^0.13.6",
+    "styled-components": "^5.3.6",
     "typeface-roboto": "^1.1.13"
   }
 }
