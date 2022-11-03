@@ -5,13 +5,13 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
 const headFooterStyle = {
-  padding:8,
-  textAlign:"center",
+  padding: 8,
+  textAlign: "center",
 };
 const mainStyle = {
-  padding:16,
-  textAlign:"center"
-}
+  padding: 16,
+  textAlign: "center"
+};
 const navStyle = {marginLeft: 5};
 
 export default function App(){
