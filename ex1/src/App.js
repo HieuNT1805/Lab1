@@ -1,14 +1,31 @@
 import * as React from "react"
 
+
+function fetchUser(){
+  return new Promise((resolve)=>{
+    setTimeout(()=>{
+      resolve({id:1, name:"Adam"});
+    },1000);
+  });
+}
+
 function App() {
-  const [MyComponent, setMyComponent]= React.useState (()=>null);
+  const [id, setId]= React.useState ("loeading...");
+  const [name, setName]= React.useState ("loeading...");
 
   React.useEffect(()=>{
-    import("./MyComponent").then((module)=>{
-      setMyComponent(()=>module.default);
-    })
-  },[]);
-  return <MyComponent/>
+    fetchUser().then((user)=>{
+      setId(user.id);
+      setName(user.name);
+    });
+    
+  });
+  return (
+    <>
+      <p>ID:{id}</p>
+      <p>Name:{name}</p>
+    </>
+  )
 }
 
 export default App;
