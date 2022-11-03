@@ -1,17 +1,14 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes
-}  from "react-router-dom"
-import MyComponent from "./MyComponent";
+import * as React from "react"
+
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<MyComponent/>}/>
-      </Routes>
-    </Router>
-  );
+  const [MyComponent, setMyComponent]= React.useState (()=>null);
+
+  React.useEffect(()=>{
+    import("./MyComponent").then((module)=>{
+      setMyComponent(()=>module.default);
+    })
+  },[]);
+  return <MyComponent/>
 }
 
 export default App;
